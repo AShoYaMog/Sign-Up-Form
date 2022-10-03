@@ -1,0 +1,180 @@
+$logo-text-color: white;
+$text-background-color:  rgb(247, 247, 247);
+$formfild-background: white;
+$button-color: #596D48;
+
+@font-face {
+    font-family: odin;
+    src: url('../fonts/Norse-Bold.otf');
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.side_image {
+    width: 45vw;
+    min-height: 100vh;
+    background-image: url('../image/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    p {
+        position: absolute;
+    }
+    .logo {
+        width: 100%;
+        position: absolute;
+        top: 23vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: odin;
+        font-size: 10vh;
+        color: $logo-text-color;
+        background-color: rgba($color: #000000, $alpha: 0.40);
+        img {
+            height: 12vh;
+        }
+    }
+    .photo_orig {
+        font-size: 0.75em;
+        color: $logo-text-color;
+        width: 100%;
+        position: absolute;
+        bottom: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: $logo-text-color;
+        }
+    }
+}
+
+.form_section {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: $text-background-color;
+    div.text {
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        p {
+            font-size: 1.75em;
+            padding: 1vh 4vw;
+        }
+    }
+    form {
+        font-size: 1em;
+        height: 65vh;
+        .doit {
+            background-color: $formfild-background;
+            padding: 2vh 4vw 0;
+            p {
+                font-size: 1.5em;
+            }
+        }
+        fieldset {
+            display: flex;            
+            gap: 5vh;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 4vh 4vw;
+            background-color: $formfild-background;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.11);
+            div {
+                display: flex;
+                flex-basis: 40%;
+                flex-direction: column;
+                input {
+                    border: 1px solid #E5E7EB;
+                    border-radius: 3px;
+                    &:focus {
+                        outline: none;
+                        border: 1px solid blue;
+                        background-color: $text-background-color;
+                        box-shadow: 1px 2px 5px gray;
+                    }
+                }
+            }
+        }        
+    }
+    div.submit_button {
+        padding: 3vh 4vw;
+        button {
+            padding: 1vh 3vw;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            color: $logo-text-color;
+            background-color: $button-color;
+            &:hover {
+                background-color: hsl(92, 20%, 40%);
+            }
+        }
+        div {
+            margin-top: 2vh;
+            a {
+                color: $button-color;
+                text-decoration: none;
+            }
+        }
+    }   
+}

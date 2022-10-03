@@ -1,0 +1,176 @@
+@font-face {
+  font-family: odin;
+  src: url("../fonts/Norse-Bold.otf");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.side_image {
+  width: 45vw;
+  min-height: 100vh;
+  background-image: url("../image/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.side_image p {
+  position: absolute;
+}
+.side_image .logo {
+  width: 100%;
+  position: absolute;
+  top: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: odin;
+  font-size: 10vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.side_image .logo img {
+  height: 12vh;
+}
+.side_image .photo_orig {
+  font-size: 0.75em;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side_image .photo_orig a {
+  color: white;
+}
+
+.form_section {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: rgb(247, 247, 247);
+}
+.form_section div.text {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.form_section div.text p {
+  font-size: 1.75em;
+  padding: 1vh 4vw;
+}
+.form_section form {
+  font-size: 1em;
+  height: 65vh;
+}
+.form_section form .doit {
+  background-color: white;
+  padding: 2vh 4vw 0;
+}
+.form_section form .doit p {
+  font-size: 1.5em;
+}
+.form_section form fieldset {
+  display: flex;
+  gap: 5vh;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4vh 4vw;
+  background-color: white;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.11);
+}
+.form_section form fieldset div {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+}
+.form_section form fieldset div input {
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+.form_section form fieldset div input:focus {
+  outline: none;
+  border: 1px solid blue;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 1px 2px 5px gray;
+}
+.form_section div.submit_button {
+  padding: 3vh 4vw;
+}
+.form_section div.submit_button button {
+  padding: 1vh 3vw;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+  background-color: #596D48;
+}
+.form_section div.submit_button button:hover {
+  background-color: hsl(92deg, 20%, 40%);
+}
+.form_section div.submit_button div {
+  margin-top: 2vh;
+}
+.form_section div.submit_button div a {
+  color: #596D48;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
