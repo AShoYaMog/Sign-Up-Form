@@ -156,8 +156,10 @@ table {
                 .error {
                     border: 1px solid red;
                 }
-                #passwordError {
+                .passwordError {                    
                     color: red;
+                    flex-basis: auto;
+                    height: 1vh;                  
                 }                   
           
             }

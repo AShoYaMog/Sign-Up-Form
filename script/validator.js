@@ -8,11 +8,11 @@ PASSWORD_CHECK.onkeyup = () => {
 function addError() {
     PASSWORD.classList.add('error');
     PASSWORD_CHECK.classList.add('error');
-    document.querySelector('#passwordError').style.display = 'block';
+    document.querySelector('.passwordError').style.display = 'block';
 }
 
 function removeError() {
     PASSWORD.classList.remove('error');
     PASSWORD_CHECK.classList.remove('error');
-    document.querySelector('#passwordError').style.display = 'none';
+    document.querySelector('.passwordError').style.display = 'none';
 }

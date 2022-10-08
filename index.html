@@ -32,8 +32,8 @@
                     <div class="feld"><label for="lastName">LAST NAME</label><input type="text" name="lastName" id="lastName" placeholder="Odinson" pattern="[A-Za-zА-Яа-яёЁ]+" title="Only letters allowed" required></div>
                     <div class="feld"><label for="email">EMAIL</label><input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="youremail@exampl.com" required></div>
                     <div class="feld"><label for="phone">PHONE</label><input type="text" name="phone" id="phone" pattern="[0-9]+" title="Only number allowed" required></div>
-                    <div class="feld"><label for="password">PASSWORD</label><input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><div id="passwordError" style="display: none;">*Password do not match</div></div>
-                    <div class="feld"><label for="password_check">CONFIRM PASSWORD</label><input type="password" name="password_check" id="password_check" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password do not match" required></div>
+                    <div class="feld"><label for="password">PASSWORD</label><input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><div class="passwordError" style="display: none;">*Password do not match</div></div>
+                    <div class="feld"><label for="password_check">CONFIRM PASSWORD</label><input type="password" name="password_check" id="password_check" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password do not match" required><div class="passwordError"></div></div>
                 </fieldset>
                 <div class="submit_button">
                     <button type="submit">Create account</button>
