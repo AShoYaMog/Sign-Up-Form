@@ -156,6 +156,9 @@ table {
 .form_section form fieldset div .error {
   border: 1px solid red;
 }
+.form_section form fieldset div #passwordError {
+  color: red;
+}
 .form_section div.submit_button {
   padding: 3vh 4vw;
 }
