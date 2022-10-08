@@ -63,7 +63,6 @@ table {
     display: flex;
 }
 
-
 .side_image {
     width: 45vw;
     min-height: 100vh;
@@ -146,13 +145,18 @@ table {
                 input {
                     border: 1px solid #E5E7EB;
                     border-radius: 3px;
+
                     &:focus {
                         outline: none;
                         border: 1px solid blue;
                         background-color: $text-background-color;
                         box-shadow: 1px 2px 5px gray;
                     }
-                }
+                }                  
+                .error {
+                    border: 1px solid red;
+                }                    
+          
             }
         }        
     }
